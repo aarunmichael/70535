@@ -1,0 +1,54 @@
+ARM Templates
+
+Why use ARM templates?
+----------------------
+  Deploy, Manage and Monitor all resources in a solution as a group. Allows to group resources into common life cycle.
+  Re-use the same templates for all environments.
+  Declarative model means Azure takes care of error handling.
+  Orchastrate complex deployments.
+  Re-deploy a soultion throughout the deployement cycle.
+  Role-based access control (RABC), azure Policy, and Resource Locks are respected.
+
+JAVASCRIPT OBJECT NOTATION (JSON)
+---------------------------------
+
+  > Light wieght data-interexchange format based on a subject of JavaScript.
+  > JSON is based on two structure types
+    * A collection of name/value pairs.
+    * ordered list of values.
+  > Supports schema rhar enable intellisese/autocomplete in JSON supported editors.
+
+Basics
+------
+  Each JSON has a start and end bracket
+  {
+  }
+  
+  JSON objects are defined within the brackets.
+  String values use double quotes.
+  
+  {
+    "name" : "value",
+    "incehs" : 12
+  }
+  
+JSON Data Types
+
+Anatomy of a ARM Template
+--------------------------
+  > $schema
+    * The url to the JSON schema that defines the version of the template used.
+  > contentVersion
+      * Version of your template. this is useful to ensure you ar edeploying the the correct version of the template.
+  > parameters
+      * Define inputs for templates.
+  > variables
+      * Custome values usually created from parameters or output from other templates.
+  > resources
+      * What resource in Azure (VMs, databases, etc) the template actually defeines.
+  > Outputs
+      * Return value (if any) that the template produces.
+      
+
+  
+  
